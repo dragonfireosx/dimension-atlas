@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dimension Atlas</title>
+<style>/*CSS*/</style>
+</head>
+<body>
+<div id="boot" class="boot" role="status" aria-live="polite">
+  <div class="boot-card">
+    <span class="logo" aria-hidden="true"><i></i><i></i><i></i></span>
+    <h1>Dimension Atlas</h1>
+    <ol class="boot-steps">
+      <li data-step="scan">Checking your computer</li>
+      <li data-step="chart">Laying out the shapes</li>
+      <li data-step="view">Starting the 3D viewer</li>
+    </ol>
+    <p class="boot-note" id="boot-note">&nbsp;</p>
+    <p class="boot-credit">In2infinity · Powered by Dragonfire</p>
+  </div>
+</div>
+<div id="app">
+  <header class="top">
+    <div class="brand">
+      <span class="logo" aria-hidden="true"><i></i><i></i><i></i></span>
+      <div>
+        <h1>Dimension Atlas</h1>
+        <p>Every shape is dots in space. Count the corners and the patterns appear.</p>
+      </div>
+    </div>
+    <nav class="tabs" role="group" aria-label="View">
+      <button id="v-corners" type="button" aria-pressed="true">By corners</button>
+      <button id="v-dims" type="button" aria-pressed="false">By dimension</button>
+      <button id="learnbtn" type="button">Learn</button>
+    </nav>
+  </header>
+
+  <main class="stage">
+    <section id="table" aria-label="Chart of shapes">
+      <div id="vgrid"></div>
+      <div id="dtable"></div>
+    </section>
+
+    <aside id="card" aria-label="Selected shape">
+      <div id="player">
+        <div id="stage"></div>
+        <div class="hud hud-modes" id="modes" role="group" aria-label="How to show it"></div>
+        <div class="hud hud-ctl">
+          <button id="play" type="button" aria-label="Pause">Pause</button>
+          <label class="spd" title="Speed"><span>Speed</span><input id="speed" type="range" min="0.1" max="3" step="0.1" value="1"></label>
+          <button id="reset" type="button" title="Reset view" aria-label="Reset view">⟲</button>
+          <button id="full" type="button" title="Full screen" aria-label="Full screen">⤢</button>
+        </div>
+        <div class="hud oob" id="oob" hidden>Too big for this computer · stand-in</div>
+        <div class="busy" id="busy" hidden><i></i><span></span></div>
+        <div class="hud fs-top" id="fs-top"></div>
+        <div class="hud fs-bottom" id="fs-bottom"></div>
+      </div>
+      <div id="detail" aria-live="polite"></div>
+    </aside>
+  </main>
+</div>
+<script type="text/plain" id="notices">/*NOTICES*/</script>
+<script>/*JS*/</script>
+</body>
+</html>

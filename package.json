@@ -1,0 +1,21 @@
+{
+  "name": "dimension-atlas",
+  "version": "1.6.0",
+  "description": "A periodic table of shapes: count the corners and the patterns appear.",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node test/geometry.test.mjs && node test/projection.test.mjs && node test/app.test.mjs",
+    "app": "cd src-tauri && cargo tauri build"
+  },
+  "keywords": [],
+  "author": "In2infinity (https://in2infinity.com)",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "dependencies": {
+    "esbuild": "^0.28.2",
+    "jsdom": "^29.1.1",
+    "three": "^0.186.1"
+  },
+  "type": "module",
+  "private": true,
+  "homepage": "https://in2infinity.com"
+}
