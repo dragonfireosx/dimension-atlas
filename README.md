@@ -56,7 +56,7 @@ chmod +x DimensionAtlas-1.6.0-x86_64.AppImage
 
 ## Build it
 
-You need Node 18+ and, for the desktop app, Rust and the [Tauri 2 prerequisites](https://v2.tauri.app/start/prerequisites/).
+You need Node 20+ (the tests' jsdom needs it) and, for the desktop app, Rust and the [Tauri 2 prerequisites](https://v2.tauri.app/start/prerequisites/).
 
 ```
 npm install
